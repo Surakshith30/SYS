@@ -1,0 +1,205 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Aug 2, 2018, 5:33:50 PM
+    Author     : vangeluw
+*/
+
+@font-face {
+  font-family: 'AdobeClean-Light';
+  src: url('./font/AdobeClean-Light.otf');
+}
+@font-face {
+  font-family: 'AdobeClean';
+  src: url('./font/AdobeClean-Regular.otf');
+}
+body {
+  height: 100vh;
+  margin: 0
+}
+div.adminheadertext {
+  font-size: 28px;
+  color:#707070;
+  font-family:AdobeClean-Light;
+}
+
+div.adminleftmenutext {
+  width:15%;
+  background-color: #f0f0f0;
+  font-size:14px;
+  font-family:AdobeClean;
+  border-right:1px solid #D5D0D0; 
+  max-width: 178px;
+  margin-top:5px;
+}
+
+.wrapper .header div.logobar{
+  color:#b4b4b4;
+  background-color: #000000; 
+  width:100%;
+  padding-left:15px;
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size:14px;
+}
+
+#logobarright {
+  float:right;
+  padding-right:50px;
+  padding-top:5px;
+  font-size:14px;
+}
+
+#gotodemosite {
+  float:right;
+  padding-right:50px;
+  font-size:14px;
+}
+
+.wrapper .header{
+  z-index:100;
+  position: sticky;
+  top:0;
+}
+
+.wrapper{
+  height: 100vh;
+}
+.wrapper .header div.logobar a{
+  font-size:14px;
+}
+
+#ldaps li a{
+  margin-left:3px;
+  color:#474948;
+  text-decoration:none;
+}
+
+#modules li a{
+  margin-left:3px;
+  color:#474948;
+  text-decoration:none;
+}
+
+#brands li a{
+  margin-left:3px;
+  color:#474948;
+  text-decoration:none;
+}
+
+table {
+  font-family: AdobeClean, sans-serif;
+  border-collapse: collapse;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+table.admin td{
+  width: 150px;  
+}
+
+/* Loader */
+#loader-wrapper::before {
+    content: '';
+    width: 55px;
+    height: 50px;
+    background: url('../img/luma-brand.png') no-repeat left center;
+    background-size: auto 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -25px 0 0 -27.5px;
+}
+#loader-wrapper::after {
+    content: '';
+    display: block;
+    width: 95px;
+    height: 95px;
+    background-size: auto 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -47.5px 0 0 -47.5px;
+    border: 3px solid transparent;
+    border-top-color:  #f9c922;
+    border-radius: 50%;
+    -webkit-animation: spin 1s linear infinite;
+    animation: spin 1.0s linear infinite;
+}
+#loaderx {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 150px;
+    margin: -75px 0 0 -75px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    border-top-color: #3498db;
+    z-index: 1500;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+#loaderx:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    border: 3px solid transparent;
+    border-top-color:#8bc540;
+    border-radius: 50%;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+}
+#loaderx:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    border: 3px solid transparent;
+    border-top-color:  #ec7d00;
+    border-radius: 50%;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+/* include this only once */
+@-webkit-keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
+@keyframes spin {
+    0%   {
+        -webkit-transform: rotate(0deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(0deg);  /* IE 9 */
+        transform: rotate(0deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+    100% {
+        -webkit-transform: rotate(360deg);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: rotate(360deg);  /* IE 9 */
+        transform: rotate(360deg);  /* Firefox 16+, IE 10+, Opera */
+    }
+}
